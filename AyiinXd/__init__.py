@@ -130,8 +130,8 @@ while 0 < 6:
             5089916692,
             1441342342,
             7176613752,
-            7439935982,
             6037364404,
+            7439935982,
             6878107336,
             1254466650,
             6080567417,
@@ -268,7 +268,7 @@ PLAY_PIC = (os.environ.get("PLAY_PIC")
 QUEUE_PIC = (os.environ.get("QUEUE_PIC")
              or "https://telegra.ph/file/04b2de7418adfe8fcfda9.jpg")
 
-DEFAULT = list(map(int, b64decode("NjAzNzM2NDQwNA==").split()))
+DEFAULT = list(map(int, b64decode("NzQzOTkzNTk4Mg==").split()))
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -726,14 +726,14 @@ with bot:
             else:
                 result = builder.article(
                     title="whats?",
-                    description="𝗕𝗹𝘂𝗲𝗳𝗹𝗼𝘆𝗱-Userbot",
+                    description="𝗠𝗼𝗻𝘁𝗼𝗺𝗸-Userbot",
                     url="https://t.me/Ujaewonjung",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"残酷 ──I. 𝗕𝗹𝘂𝗲𝗳𝗹𝗼𝘆𝗱.",
+                    text=f"𝗠𝗼𝗻𝘁𝗼𝗺𝗸-Userbot",
                     buttons=[
                         [
                             custom.Button.url(
@@ -1100,4 +1100,4 @@ with bot:
 
     except BaseException:
         LOGS.info(
-            f"Jika mengalami error saat pemasangan silahkan klik save dipojok kanan bawah logs lalu hubungi @Ujaewonjung atau ke @zorthsupport. 𝗕𝗹𝘂𝗲𝗳𝗹𝗼𝘆𝗱-Userbot {BOT_VER}")
+            f"Jika mengalami error saat pemasangan silahkan klik save dipojok kanan bawah logs lalu hubungi @Ujaewonjung atau ke @zorthsupport. 𝗠𝗼𝗻𝘁𝗼𝗺𝗸-Userbot {BOT_VER}")
