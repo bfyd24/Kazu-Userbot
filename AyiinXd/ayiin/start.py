@@ -19,9 +19,9 @@ async def startupmessage():
             await tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/78fbd9d73e1f456857222.jpg",
-                caption="𝗕𝗟𝗨𝗘𝗙𝗟𝗢𝗬𝗗-Userbot.\n     **status : Active\n     ketik `.ping` untuk cek bot!**",
-                buttons=[(Button.url("Channel", "https://t.me/bluefloydd")),
-                         (Button.url("Support", "https://t.me/bluetsst"))]
+                caption="𝗠𝗼𝗻𝘁𝗼𝗺𝗸-Userbot.\n     **status : Active\n     ketik `.ping` untuk cek bot!**",
+                buttons=[(Button.url("Channel", "https://t.me/montomk")),
+                         (Button.url("Support", "https://t.me/zorthsupport"))]
             )
     except Exception as e:
         LOGS.error(e)

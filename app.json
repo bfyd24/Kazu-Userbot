@@ -1,9 +1,9 @@
 {
-  "name": "𝗕𝗟𝗨𝗘𝗙𝗟𝗢𝗬𝗗-Userbot",
-  "description": " What? @blue ",
+  "name": "𝗠𝗼𝗻𝘁𝗼𝗺𝗸-Userbot",
+  "description": " MONTOMK-USERBOT ",
   "logo": "https://telegra.ph/file/f4700c25168954f9b0382.jpg",
-  "keywords": ["telegram", "userbot", "bluefloyd-Userbot", "modular", "python"],
-  "repository": "https://github.com/bluefloyd24/Kazu-Userbot",
+  "keywords": ["telegram", "userbot", "MONTOMK-Userbot", "modular", "python"],
+  "repository": "https://github.com/bfyd24/Kazu-Userbot",
   "stack": "container",
   "env": {
     "API_KEY": {

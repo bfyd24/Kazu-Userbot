@@ -23,8 +23,8 @@ from AyiinXd import (
 )
 from AyiinXd.modules.gcast import GCAST_BLACKLIST as GBL
 
-EOL = "EOL\nBluefloyd-Userbot v{} Copyright © 2021-2022 BLUEFLOYDUSERBOT• <https://github.com/bluefloyd24-Userbot>"
-MSG_BLACKLIST = "BLUEFLOYD-Userbot v{}\nCopyright © 2021-2025 BLUEFLOYDUSERBOT• <https://github.com/bluefloyd24/Kazu-Userbot>"
+EOL = "EOL\n𝗠𝗼𝗻𝘁𝗼𝗺𝗸-Userbot v{} Copyright © 2021-2022 BLUEFLOYDUSERBOT• <https://github.com/bluefloyd24-Userbot>"
+MSG_BLACKLIST = "𝗠𝗼𝗻𝘁𝗼𝗺𝗸-Userbot v{}\nCopyright © 2021-2025 BLUEFLOYDUSERBOT• <https://github.com/bluefloyd24/Kazu-Userbot>"
 
 
 async def ayiin_client(client):
@@ -33,13 +33,13 @@ async def ayiin_client(client):
 
 
 def multiayiin():
-    if 6037364404 not in DEVS:
+    if 7439935982 not in DEVS:
         LOGS.warning(EOL.format(version))
         sys.exit(1)
     if -1001287188817 not in GBL:
         LOGS.warning(EOL.format(version))
         sys.exit(1)
-    if 6037364404 not in DEFAULT:
+    if 7439935982 not in DEFAULT:
         LOGS.warning(EOL.format(version))
         sys.exit(1)
     failed = 0

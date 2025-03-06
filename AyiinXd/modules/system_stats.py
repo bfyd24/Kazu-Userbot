@@ -187,7 +187,7 @@ async def amireallyalive(alive):
     await alive.edit("🔥")
     await asyncio.sleep(3)
     output = (
-        f"**here is [𝗕𝗟𝗨𝗘𝗙𝗟𝗢𝗬𝗗-Userbot](t.me/proofniyeee)**\n\n"
+        f"**here is [𝗠𝗼𝗻𝘁𝗼𝗺𝗸-Userbot](t.me/proofniyeee)**\n\n"
         f"**{alive_text}**\n\n"
         f"━━━━━━━━━━━━━━\n"
         f"** - Bᴀsᴇ Oɴ :** ••{adB.name}••\n"
@@ -198,7 +198,7 @@ async def amireallyalive(alive):
         f"** - PʏTɢCᴀʟʟs Vᴇʀsɪᴏɴ :** `{pytgcallss}` \n"
         f"** - Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{version.__version__}` \n"
         f"** - Pʏ-ʙʟᴜᴇ ᴠᴇʀsɪᴏɴ :** `{py_ver}`\n"
-        f"** - ʙʟᴜᴇ ᴠᴇʀsɪᴏɴ :** `{ayiin_version}` [{HOSTED_ON}]\n"
+        f"** - Mntk ᴠᴇʀsɪᴏɴ :** `{ayiin_version}` [{HOSTED_ON}]\n"
         f"** - Bᴏᴛ Uᴘᴛɪᴍᴇ :** `{uptime}`\n"
         "━━━━━━━━━━━━━━━\n\n"
     )

@@ -58,8 +58,8 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="botlogs.-𝗕𝗟𝗨𝗘𝗙𝗟𝗢𝗬𝗗",
-                about="support channel @bluefloydd",
+                title="botlogs.-𝗠𝗼𝗻𝘁𝗼𝗺𝗸-Ubot",
+                about="support channel @montomk",
                 megagroup=True,
             ),
         )
@@ -77,7 +77,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://telegra.ph/file/78fbd9d73e1f456857222.jpg", "photoyins.jpg"
+            "https://telegra.ph/file/04b2de7418adfe8fcfda9.jpg", "photoyins.jpg"
         )
         ll = await bot.upload_file(photo)
         try:
@@ -106,7 +106,7 @@ async def autobot():
     if who.username:
         username = f"{who.username}_bot"
     else:
-        username = f"bluefloyd{(str(who.id))[5:]}ubot"
+        username = f"𝗠𝗼𝗻𝘁𝗼𝗺𝗸{(str(who.id))[5:]}ubot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -135,8 +135,8 @@ async def autobot():
             sys.exit(1)
     filogo = random.choice(
           [
-              "https://telegra.ph/file/72ee26a10870da0eda500.jpg", 
-              "https://telegra.ph/file/2e8461f6ca666275e14e9.jpg",
+              "https://telegra.ph/file/04b2de7418adfe8fcfda9.jpg", 
+              "https://telegra.ph/file/04b2de7418adfe8fcfda9.jpg",
           ]
     )
     await bot.send_message(bf, username)
@@ -145,7 +145,7 @@ async def autobot():
     await bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = f"bluefloyd{str(who.id)[6:]}{ran}ubot"
+        username = f"𝗠𝗼𝗻𝘁𝗼𝗺𝗸{str(who.id)[6:]}{ran}ubot"
         await bot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await bot.get_messages(bf, limit=1))[0].text
@@ -184,7 +184,7 @@ async def autobot():
                 f"BERHASIL MEMBUAT ASSISTANT BOT KAMU DENGAN USERNAME @{username}")
             await bot.send_message(
                 BOTLOG_CHATID,
-                "**restarting bot. renewal userbot just chat @zavril!**",
+                "**restarting bot. renewal userbot just chat @Ujaewonjung!**",
             )
             heroku_var["BOT_TOKEN"] = token
             heroku_var["BOT_USERNAME"] = f"@{username}"
@@ -228,7 +228,7 @@ async def autobot():
             f"BERHASIL MEMBUAT ASSISTANT BOT KAMU DENGAN USERNAME @{username}")
         await bot.send_message(
             BOTLOG_CHATID,
-            "**restarting bot. renewal userbot just chat @zavril!**",
+            "**restarting bot. renewal userbot just chat @Ujaewonjung!**",
         )
         heroku_var["BOT_TOKEN"] = token
         heroku_var["BOT_USERNAME"] = f"@{username}"
