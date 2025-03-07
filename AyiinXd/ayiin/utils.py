@@ -44,6 +44,7 @@ else:
 
 async def autopilot():
     LOGS.info("SEDANG MEMBUAT GROUP LOG USERBOT UNTUK ANDA")
+    who = await bot.get_me()
     if BOTLOG_CHATID and str(BOTLOG_CHATID).startswith("-100"):
         return
     y = []  # To Refresh private ids
@@ -59,7 +60,7 @@ async def autopilot():
         r = await bot(
             CreateChannelRequest(
                 title="botlogs.-𝗠𝗼𝗻𝘁𝗼𝗺𝗸-Ubot",
-                about="support channel @montomk",
+                about=f"令   • owner by {who.first_name}\n\n令   • userbot murah di @montomk",
                 megagroup=True,
             ),
         )
@@ -106,7 +107,7 @@ async def autobot():
     if who.username:
         username = f"{who.username}_bot"
     else:
-        username = f"𝗠𝗼𝗻𝘁𝗼𝗺𝗸{(str(who.id))[5:]}ubot"
+        username = f"Montomk{(str(who.id))[5:]}ubot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -145,7 +146,7 @@ async def autobot():
     await bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = f"𝗠𝗼𝗻𝘁𝗼𝗺𝗸{str(who.id)[6:]}{ran}ubot"
+        username = f"Montomk{str(who.id)[6:]}{ran}ubot"
         await bot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await bot.get_messages(bf, limit=1))[0].text
@@ -174,7 +175,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"made with love"
+                bf, f"令   • owner by {who.first_name}\n\n令   • userbot murah di @montomk"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -218,7 +219,7 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"made with love"
+            bf, f"令   • owner by {who.first_name}\n\n令   • userbot murah di @montomk"
         )
         await bot.send_message(
             BOTLOG_CHATID,
